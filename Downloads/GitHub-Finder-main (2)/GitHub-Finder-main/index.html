@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+  <header class="topo">
+    <i class="fa-brands fa-github"></i>
+    <h2>GitHub Finder</h2>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h3>BUSCAR USUÁRIO</h3>
+
+        <div class="container-pesquisa">
+          <div class="container-input">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="input-usuario" placeholder="ex: gustavbarbosaa">
+          </div>
+          <button id="botao-pesquisar">Buscar</button>
+        </div>
+
+      <div class="recentes">
+        <p>Pesquisados recentemente</p>
+        <ul id="lista-recentes">
+          <li>Nenhuma busca recente.</li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="conteudo-principal">
+
+      <div class="mensagem" id="mensagem-inicial">
+        <i class="fa-brands fa-github"></i>
+        <p>
+          Digite um nome de usuário ao lado <br>
+          pressione Buscar para visualizar o perfil
+        </p>
+      </div>
+
+      <!-- implementações -->
+
+      <div id="erro" class="oculto">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <p id="erro-texto"></p>
+      </div>
+
+      <div id="container-resultado" class="perfil-card oculto">
+        <div class="perfil-header">
+          <img src="" alt="Avatar" id="avatar">
+          <div class="perfil-info">
+            <h2 id="nome"></h2>
+            <a href="#" id="usuario" target="_blank"></a>
+        </div>
+      </div>
+        
+      <p id="biografia"></p>
+      <div class="perfil-container">
+        <div class="card-bloco" id="card-repos">
+          <span class="campo">REPOSITORIOS</span>
+          <span id="qtdeRepositorios" class="valor">0</span>
+        </div>
+        <div class="card-bloco" id="card-seguidores">
+          <span class="campo">SEGUIDORES</span>
+          <span id="qtdeSeguidores" class="valor">0</span>
+        </div>
+        <div class="card-bloco" id="card-seguindo">
+          <span class="campo">SEGUINDO</span>
+          <span id="qtdeSeguindo" class="valor">0</span>
+        </div>
+      </div>
+
+    <a id="blog" href="#" target="_blank" class="botao-blog">Ver blog</a>
+  </div>
+
+  <div id="lista-detalhes" class="oculto"></div>
+
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0d1117;
+    color: #fff;
+}
+
+.topo {
+    font-size: 30px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #0d1117;
+    border-bottom: 1px solid #21262d;
+}
+
+.topo i {
+    font-size:40px;
+    margin: 15px;
+}
+
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 550px;
+    padding: 20px;
+    border-right: 1px solid #21262d;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar h3 {
+    font-size: 25px;
+    color: #8b949e;
+}
+
+.container-pesquisa {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+}
+
+.container-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid #30363d;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: #0d1117;
+    flex: 1;
+}
+
+.container-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    margin-left: 15px;
+    font-size: 22px;  
+    padding: 10px 0;  
+    width: 100%;      
+}
+
+#botao-pesquisar {
+    padding: 20px 30px;
+    background-color: #221d8a;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 23px;    
+    font-weight: 500;
+}
+
+#botao-pesquisar:hover {
+    background-color: #3129c5;
+}
+
+.recentes {
+    margin-top: 20px;
+    font-size: 23px;
+    color: #8b949e;
+}
+
+.conteudo-principal {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161b22;
+}
+
+.mensagem {
+    text-align: center;
+    color: #8b949e;
+    font-size: 24px;
+}
+
+.mensagem i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.perfil-card {
+    background-color: #0d1117;
+    border-radius: 10px;
+    padding: 130px;
+    width: 650px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+.perfil-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+#avatar {
+    width: 143px;
+    height: 143px;
+    border-radius: 50%;
+    border: 4px solid #221d8a;
+}
+
+.perfil-info h2 {
+    margin: 0;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.perfil-info a {
+    color: #58a6ff;
+    text-decoration: none; 
+    font-size: 25px; 
+}
+
+#biografia {
+    font-size: 25px;
+    color: #8b949e;
+    margin-bottom: 30px;
+}
+
+.perfil-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #161b22;
+    padding: 35px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.card-bloco { 
+    text-align: center; 
+}
+
+
+.card-bloco .campo {
+    display: block; 
+    font-size: 20px; 
+    color: #8b949e;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.card-bloco .campo:hover {
+    text-decoration: underline;
+}
+
+.card-bloco .valor {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.botao-blog {
+    text-align: center;
+    background-color: #21262d;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 25px;
+    border: 1px solid #30363d;
+}
+
+.botao-blog:hover { 
+    background-color: #30363d; 
+}
+
+.oculto {
+    display: none;
+}
+
+#erro {
+    text-align: center;
+    color: #fff; 
+}
+
+#erro i {
+    font-size: 50px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+#erro p {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#lista-recentes {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#lista-recentes li {
+    margin-bottom: 10px;
+}
+
+#lista-recentes a {
+    text-decoration: none;
+    color: #58a6ff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#lista-recentes a:hover {
+    text-decoration: underline;
+}
+
+#lista-detalhes {
+    margin-left: 50px;
+    background-color: #0d1117;
+    padding: 60px;
+    border-radius: 10px;
+    width: 550px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+}
+
+#lista-detalhes p {
+    margin-bottom: 30px;
+}
+
+#lista-detalhes a {
+    text-decoration: none;
+    color: #58a6ff;
+    font-size: 20px;
+}
+
+#lista-detalhes h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#lista-itens {
+    padding-left: 70px;
+    margin-bottom: 40px;
+}
+
+#lista-itens li {
+    margin-bottom: 10px;
+}
+
+#lista-detalhes a:hover {
+    text-decoration: underline;
+}
